@@ -1,7 +1,12 @@
 import React from 'react'
 import { View, Text, Button, TouchableOpacity, Image } from 'react-native'
 
+import User from './components/user/User';
+
 export default function App() {
+
+  const BtnSubmitname = "Run 55";
+
   return (
     <View
       style={{
@@ -11,7 +16,9 @@ export default function App() {
 
       }}
     >
-      <Text>Hello btn</Text>
+      {/* <Text>Hello btn</Text> */}
+      <User fname="day" lname="pro"></User>
+
       <View style={{height:24}} />
       <Button title="ClickMe1" onPress={()=>alert("Hello")} />
       <View style={{height:24}} />
@@ -42,7 +49,7 @@ export default function App() {
           borderRadius:5,
         }}
       >
-        <Text>Run</Text>
+        <Text>{BtnSubmitname}</Text>
       </TouchableOpacity>  
 
       <TouchableOpacity onPress={ ()=>alert("555") }
